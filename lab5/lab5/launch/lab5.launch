@@ -1,0 +1,9 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab5)/world/exp_playground.world" />
+
+	<node name="astar" pkg="lab5" type="experiment_astar.py" 
+	      args="-8 -2 4.5 9"/>  
+	   <!--   args="-7 -7 4.5 9"   -->
+
+</launch>

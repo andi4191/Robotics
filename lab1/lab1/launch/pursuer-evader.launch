@@ -1,0 +1,7 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab1)/world/pursuer.world" />
+       <node name="evader_ctrlp" ns="robot_0" pkg="lab1" type="evader_ctrlp"/> 
+       <node name="pursuer_ctrl" ns="robot_1" pkg="lab1" type="pursuer_ctrl" /> 
+
+</launch>

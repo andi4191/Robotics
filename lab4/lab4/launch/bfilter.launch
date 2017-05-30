@@ -1,0 +1,5 @@
+<launch>
+	<node name="bfilter" pkg="lab4" type="readsamp.py" args="$(find lab4)/bag/grid.bag" output="screen"/> 
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find lab4)/conf_rviz/default.rviz"/>
+
+</launch>

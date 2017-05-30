@@ -1,0 +1,8 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab2)/world/playground.world" />
+
+        <node name="lines" pkg="lab2" type="percept"/>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find lab2)/conf_rviz/default.rviz"/>
+
+</launch>
